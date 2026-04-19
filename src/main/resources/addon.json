@@ -2,6 +2,6 @@
   "namespace": "autohgw",
   "name": "Auto HGW",
   "version": "1.0.0",
-  "author": "AzureDawn",
-  "entrypoint": "de.azuredawn.autohgw.AutoHGWAddon"
+  "author": "gvvv",
+  "entrypoint": "de.gvvv.autohgw.AutoHGWAddon"
 }
