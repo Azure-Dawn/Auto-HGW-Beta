@@ -3,5 +3,5 @@
   "name": "Auto HGW",
   "version": "1.0.0",
   "author": "gvvv",
-  "entrypoint": "de.gvvv.autohgw.AutoHGWAddon"
+  "entrypoint": "de.azuredawn.autohgw.AutoHGWAddon"
 }
