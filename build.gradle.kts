@@ -1,6 +1,6 @@
 plugins { java }
 
-group = "de.azuredawn"
+group = "de.gvvv"
 version = "1.0.0"
 
 java {
