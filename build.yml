@@ -1,0 +1,36 @@
+# Updated build.yml
+
+# Build configuration for the project
+
+name: Build
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up JDK 11
+        uses: actions/setup-java@v2
+        with:
+          java-version: '11'
+
+      - name: Build with Gradle
+        run: ./gradlew build
+
+      - name: List build/libs contents
+        run: ls -la build/libs
+
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: my-artifacts
+          path: build/libs/*.jar
+
+# Please ensure you're using the correct path for your artifacts.
